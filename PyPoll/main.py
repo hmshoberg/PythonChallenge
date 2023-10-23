@@ -13,3 +13,6 @@ budget_csv = os.path.join("Pypoll", "Resources","election_data.csv")
 
 with open(budget_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter= ",")
+
+    #Read the headers
+    csv_header = next(csvreader)

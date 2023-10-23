@@ -79,7 +79,9 @@ with open(budget_csv) as csvfile:
     print(str(f"Greatest Decrease In Profits: {lowestdate} (${str(greatestdec)})"))
 
 #Export results to a text file
-with open("PyBank.txt", "w") as text: 
+Results = os.path.join("Analysis", "PyBank.txt")
+
+with open("Results", "w") as text: 
 
     text.write("Financial Analysis" + "\n")
     text.write("----------------------------------\n")
